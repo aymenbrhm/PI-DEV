@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="544.0" prefWidth="770.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Views.RemorquageController">
+   <children>
+      <TableView fx:id="tableRemorquage" layoutX="250.0" layoutY="103.0" onMouseClicked="#selected" prefHeight="356.0" prefWidth="506.0">
+         <columns>
+            <TableColumn fx:id="id" minWidth="0.0" prefWidth="83.0" text="ID" />
+            <TableColumn fx:id="nom" prefWidth="60.0" text="Name" />
+            <TableColumn fx:id="prenom" text="PRENOM" />
+            <TableColumn fx:id="email" prefWidth="78.0" text="EMAIL" />
+            <TableColumn fx:id="numtel" prefWidth="95.0" text="NUMTEL" />
+            <TableColumn fx:id="ids" minWidth="0.0" prefWidth="99.0" text="IDSERVICE" />
+         </columns>
+      </TableView>
+      <TextArea fx:id="idremorquage" layoutX="24.0" layoutY="14.0" prefHeight="43.0" prefWidth="149.0" />
+      <TextArea fx:id="nomremorquage" layoutX="79.0" layoutY="186.0" prefHeight="43.0" prefWidth="149.0" />
+      <TextArea fx:id="prenomremorquage" layoutX="79.0" layoutY="272.0" prefHeight="43.0" prefWidth="149.0" />
+      <TextArea fx:id="emailremorquage" layoutX="79.0" layoutY="361.0" prefHeight="43.0" prefWidth="149.0" />
+      <TextArea fx:id="numtelremorquage" layoutX="79.0" layoutY="454.0" prefHeight="43.0" prefWidth="149.0" />
+      <ComboBox fx:id="idservice" layoutX="79.0" layoutY="103.0" prefHeight="43.0" prefWidth="150.0" />
+      <Button fx:id="ajouterRom" layoutX="324.0" layoutY="488.0" mnemonicParsing="false" onMouseClicked="#addRom" prefHeight="25.0" prefWidth="61.0" text="ajouter" />
+      <Button fx:id="supprimerRom" layoutX="468.0" layoutY="488.0" mnemonicParsing="false" onMouseClicked="#deleteRom" text="supprimer" />
+      <Button fx:id="modifierRom" layoutX="610.0" layoutY="488.0" mnemonicParsing="false" onMouseClicked="#updateRom" text="modifier" />
+      <Text layoutX="119.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IDService" wrappingWidth="53.13671875" />
+      <Text layoutX="127.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="53.13671875" />
+      <Text layoutX="127.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prenom" wrappingWidth="53.13671875" />
+      <Text layoutX="127.0" layoutY="348.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" wrappingWidth="53.13671875" />
+      <Text layoutX="119.0" layoutY="441.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Numtelf" wrappingWidth="53.13671875" />
+   </children>
+</AnchorPane>
